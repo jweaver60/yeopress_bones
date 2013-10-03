@@ -5,14 +5,14 @@ module.exports = function(grunt) {
 		// Watches for changes and runs tasks
 		watch : {
 			sass : {
-				files : ['library/scss/**/*.scss'],
+				files : ['scss/**/*.scss'],
 				tasks : ['sass:dev'],
 				options : {
 					livereload : true
 				}
 			},
 			js : {
-				files : ['library/js/**/*.js'],
+				files : ['js/**/*.js'],
 				tasks : ['jshint'],
 				options : {
 					livereload : true
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
 
 		// JsHint your javascript
 		jshint : {
-			all : ['library/js/*.js', '!library/js/*.min.js', '!library/js/libs/**/*.js'],
+			all : ['js/*.js', '!js/*.min.js', '!js/libs/**/*.js'],
 			options : {
 				browser: true,
 				curly: false,
@@ -79,7 +79,7 @@ module.exports = function(grunt) {
 		// Bower task sets up require config
 		bower : {
 			all : {
-				rjsConfig : 'library/js/global.js'
+				rjsConfig : 'js/global.js'
 			}
 		},
 
@@ -89,7 +89,7 @@ module.exports = function(grunt) {
 				options : {
 					name : 'global',
 					baseUrl : 'js',
-					mainConfigFile : 'library/js/global.js',
+					mainConfigFile : 'js/global.js',
 					out : 'js/optimized.min.js'
 				}
 			}
@@ -101,9 +101,9 @@ module.exports = function(grunt) {
 				files : [
 					{
 						expand: true,
-						cwd: 'library/images',
+						cwd: 'images',
 						src: '**/*.{png,jpg,jpeg}',
-						dest: 'library/images'
+						dest: 'images'
 					}
 				]
 			}
@@ -115,9 +115,9 @@ module.exports = function(grunt) {
 				files: [
 					{
 						expand: true,
-						cwd: 'library/images',
+						cwd: 'images',
 						src: '**/*.svg',
-						dest: 'library/images'
+						dest: 'images'
 					}
 				]
 			}
