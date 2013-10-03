@@ -139,6 +139,14 @@ function bones_scripts_and_styles() {
 		wp_enqueue_script( 'comment-reply' );
     }
 
+		// register require.js
+		wp_register_script('require', get_bloginfo('template_url') . '/js/libs/requirejs/require.js', array(), false, true);
+		wp_enqueue_script('require');
+
+    // register livereload for Grunt
+    wp_register_script('livereload', '<%= userInput.url %>:35729/livereload.js?snipver=1', null, false, true);
+		wp_enqueue_script('livereload');
+
     //adding scripts file in the footer
     wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/js/scripts.js', array( 'jquery' ), '', true );
 
