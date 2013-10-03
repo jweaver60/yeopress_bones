@@ -145,7 +145,7 @@ function bones_scripts_and_styles() {
 
     // register livereload for Grunt
     wp_register_script('livereload', '<%= userInput.url %>:35729/livereload.js?snipver=1', null, false, true);
-		wp_enqueue_script('livereload');
+    wp_enqueue_script('livereload');
 
     //adding scripts file in the footer
     wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/js/scripts.js', array( 'jquery' ), '', true );
