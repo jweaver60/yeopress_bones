@@ -1,29 +1,17 @@
-# Bones
-__A Lightweight Wordpress Development Theme__
+# YeoPress Bones
+__A Lightweight Wordpress Development Theme -- for YeoPress__
 
-Bones is designed to make the life of developers easier. It's built
-using HTML5 & has a strong semantic foundation. It was updated recently
-using some of the HTML5 Boilerplate's recommended markup and setup.
-It's constantly growing so be sure to check back often if you are a
-frequent user. I'm always open to contribution. :)
+It's Bones, but for YeoPress. An attempt to utilize Grunt and Bower 
+for a lightweight and flexible WordPress Theme.
 
-Designed by **Eddie Machado**: http://themble.com/bones
-
-Special Thanks to:
-* Paul Irish & the HTML5 Boilerplate
-* Yoast for some WP functions & optimization ideas
-* Andrew Rogers for code optimization
-* David Dellanave for speed & code optimization
-* and several other developers. :)
+Forked from **Eddie Machado**: http://themble.com/bones
 
 Submit Bugs & or Fixes:
-https://github.com/eddiemachado/bones/issues
+https://github.com/jweaver60/yeopress_bones/issues
 
 
 ## License
 __[WTFPL](http://sam.zoy.org/wtfpl/)__
-
-	Are You Serious? Yes.
 
 
 ## Meta
